@@ -1,0 +1,115 @@
+:root {
+    --light-green: rgba(77, 77, 77, 0.8);
+    --medium-green:  rgba(90, 90, 90, 0.8);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Lato", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #fff;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image:
+    linear-gradient(to right bottom, var(--light-green), var(--medium-green)),
+    url('../img/Pilt.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 69%, 0% 100%); 
+}
+
+.main-content h2 {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 10px;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
+    color: #FFF;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.btn3{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 160px;
+    height: 65px;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    opacity: 0;
+    animation-name: btn3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn3{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.btn2{
+    display: inline-block;
+    color: #fff;
+    text-decoration-color: #FFF;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 160px;
+    height: 65px;
+    padding: 1rem;
+    margin: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    animation-name: btn2;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.btn1{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 160px;
+    height: 65px;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 30%;
+    left: 44%;
+    animation-name: btn1;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn1{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes moveInLeft {
+    0% {opacity: 0; transform: translateX(100px);}
+    80% {transform: translateX(10px)}
+    100% {opacity: 1; transform: translateX(0);}
+}
